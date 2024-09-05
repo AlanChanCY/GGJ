@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 2ea5a46808bf913468d67c4b8383bc09
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - backGround: {fileID: 5055628095441383866, guid: a70241e91bc72df4daf5612363e71518, type: 3}
+  - camera: {fileID: 660777526074432872, guid: 9eb9fa11b8a938f40a008cdf291d54bb, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

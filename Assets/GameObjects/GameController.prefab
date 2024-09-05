@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &907541368720001461
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8042048670415144474}
+  - component: {fileID: 8631867701133703197}
+  - component: {fileID: 1201303979}
+  - component: {fileID: 1201303982}
+  - component: {fileID: 1201303983}
+  - component: {fileID: -93977547554569337}
+  - component: {fileID: -434622441840096654}
+  - component: {fileID: -6186636697625712064}
+  m_Layer: 0
+  m_Name: GameController
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8042048670415144474
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8631867701133703197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97987912d0ff0444398252f6447c5c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allyGroups: []
+  allyId: 0
+  mainCam: {fileID: 660777526074432872, guid: 9eb9fa11b8a938f40a008cdf291d54bb, type: 3}
+  enemyShot: {fileID: 1948363217217136820, guid: 9ce25a67d66bd6b45b58813fff472f51, type: 3}
+  allyShot: {fileID: 1948363217217136820, guid: 9cbecefb43176ec48b99881b470a70ad, type: 3}
+  player: {fileID: 5370100986328910111, guid: e039fb2e6628ad64bbe2a95b761315b1, type: 3}
+  gameState: 0
+  score: 0
+  enemyCost: 1
+  enemyGroupLimit: 3
+  enemyCostRampDelay: 1
+  allyCostCap: 40
+  allyLimit: 5
+  visionCenter: {x: 0, y: 0, z: 0}
+  visionRad: 10
+--- !u!114 &1201303979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea5a46808bf913468d67c4b8383bc09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGround: {fileID: 5055628095441383866, guid: a70241e91bc72df4daf5612363e71518, type: 3}
+  camera: {fileID: 660777526074432872, guid: 9eb9fa11b8a938f40a008cdf291d54bb, type: 3}
+--- !u!114 &1201303982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7116ecde39b559a43bbdb998bb8b9736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies:
+  - enemy: {fileID: 3667060037022095531, guid: cb95d6ee25e86ad4b93c376aca51c60f, type: 3}
+    cost: 200
+  - enemy: {fileID: 3667060037022095531, guid: 5e16af6e3c32f2d4e9eb19bb6e71c759, type: 3}
+    cost: 60
+  - enemy: {fileID: 3667060037022095531, guid: 738c5e325589eae4b89481b1efd161ea, type: 3}
+    cost: 10
+  - enemy: {fileID: 3667060037022095531, guid: ba9ec0795aaa1114e9e681fff353e194, type: 3}
+    cost: 1
+  gameController: {fileID: 0}
+  nextSpawn: 10
+  spawnDelay: 20
+--- !u!114 &1201303983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9871bce27e8b2014bb2e0d5581b896ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-93977547554569337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b950a7c0ed2d84299916d33e98c651, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  texture: {fileID: 2800000, guid: 185f0972426151a4f9dc4c8b134a3a22, type: 3}
+  marker: {fileID: 4708646317142490448, guid: d67a9e02fe2fa744792ac863fcf0953a, type: 3}
+--- !u!114 &-434622441840096654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5606382b62e96942895a9cd1ef6bdc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allies:
+  - ally: {fileID: 6633674108868666423, guid: e4cd1774b300073469d8a141b2b8220f, type: 3}
+    cost: 1
+  - ally: {fileID: 6633674108868666423, guid: 36b1acad0566c99428e9a9f6e85638ad, type: 3}
+    cost: 10
+  - ally: {fileID: 6633674108868666423, guid: 0bf084e2791ac9848ae05cee52c63856, type: 3}
+    cost: 40
+  gameController: {fileID: 0}
+  nextSpawn: 3
+  spawnDelay: 5
+--- !u!114 &-6186636697625712064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 907541368720001461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04f003e0c434ec3459557afca76abc43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

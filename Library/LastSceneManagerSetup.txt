@@ -1,0 +1,13 @@
+sceneSetups:
+- path: Assets/Scenes/temp.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
+- path: Assets/Scenes/StartScreen.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
+- path: Assets/Scenes/InfoScreen.unity
+  isLoaded: 0
+  isActive: 0
+  isSubScene: 0
